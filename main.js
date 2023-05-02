@@ -30,6 +30,7 @@ cam.addEventListener('play', () => {
 
     const canvas = faceapi.createCanvasFromMedia(video) // Criando canvas para mostrar nossos resultador
     document.body.append(canvas) // Adicionando canvas ao body
+    canvas.style.marginBottom = '190px'
 
     const displaySize = { width: 720, height: 480 } // criando tamanho do display a partir das dimenssões da nossa cam
 
