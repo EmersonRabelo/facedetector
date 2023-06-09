@@ -38,8 +38,10 @@ cam.addEventListener('play', () => {
 
     let tics = setInterval(detectionAPI, 1000);
 
-    btnProx.addEventListener('click', e => { 
-        tics = setInterval(detectionAPI, 1000);
+    btnProx.addEventListener('click', e => {
+        e.preventDefault();
+        startVideo();
+        //tics = setInterval(detectionAPI, 1000);
     })
 
     async function detectionAPI() {
